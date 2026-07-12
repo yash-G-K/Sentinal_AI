@@ -1,0 +1,148 @@
+2026-07-03 14:12:05 | INFO     | app.main:lifespan:20 - Starting Sentinel AI v1.0.0
+2026-07-03 14:12:05 | INFO     | app.main:lifespan:23 - Initializing database connections...
+2026-07-03 14:12:05 | INFO     | app.database.database:test_connection:43 - Database connection established successfully.
+2026-07-03 14:12:05 | DEBUG    | logging:callHandlers:1737 - Looking up time zone info from registry
+2026-07-03 14:12:05 | INFO     | logging:callHandlers:1737 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 14:12:05 | INFO     | logging:callHandlers:1737 - Added job "ThreatIntelligenceAgent.run_evaluation" to job store "default"
+2026-07-03 14:12:05 | INFO     | logging:callHandlers:1737 - Scheduler started
+2026-07-03 14:12:05 | INFO     | app.main:lifespan:30 - Background Threat Intelligence Agent scheduled.
+2026-07-03 14:12:05 | DEBUG    | logging:callHandlers:1737 - Looking for jobs to run
+2026-07-03 14:12:05 | DEBUG    | logging:callHandlers:1737 - Next wakeup is due at 2026-07-03 15:12:05.147042+05:30 (in 3599.997393 seconds)
+2026-07-03 14:12:05 | INFO     | logging:callHandlers:1737 - Application startup complete.
+2026-07-03 14:12:14 | INFO     | app.middleware.request_logger:dispatch:55 - DEBUG: Raw URL = http://127.0.0.1:8000/api/v1/health?user=admin%27+OR+%271%27%3D%271
+2026-07-03 14:12:14 | INFO     | app.middleware.request_logger:dispatch:56 - DEBUG: Query Params = {'user': "admin' OR '1'='1"}
+2026-07-03 14:12:14 | ERROR    | app.middleware.request_logger:dispatch:163 - Failed to process WAF logic: 'reason' is an invalid keyword argument for BlockedIP
+2026-07-03 14:12:14 | INFO     | app.middleware.request_logger:dispatch:205 - Allowed request ca8c8a7b-deab-46d8-b63a-67afc20986cf from 127.0.0.1 -> /api/v1/health [200] in 50ms
+2026-07-03 14:12:14 | INFO     | logging:callHandlers:1737 - 127.0.0.1:50260 - "GET /api/v1/health?user=admin%27+OR+%271%27%3D%271 HTTP/1.1" 200
+2026-07-03 14:12:36 | INFO     | logging:callHandlers:1737 - Shutting down
+2026-07-03 14:12:36 | INFO     | logging:callHandlers:1737 - Waiting for application shutdown.
+2026-07-03 14:12:36 | INFO     | app.main:lifespan:36 - Shutting down Sentinel AI
+2026-07-03 14:12:36 | INFO     | logging:callHandlers:1737 - Scheduler has been shut down
+2026-07-03 14:12:36 | INFO     | logging:callHandlers:1737 - Application shutdown complete.
+2026-07-03 14:12:36 | INFO     | logging:callHandlers:1737 - Finished server process [15932]
+2026-07-03 14:12:37 | INFO     | app.main:lifespan:20 - Starting Sentinel AI v1.0.0
+2026-07-03 14:12:37 | INFO     | app.main:lifespan:23 - Initializing database connections...
+2026-07-03 14:12:37 | INFO     | app.database.database:test_connection:43 - Database connection established successfully.
+2026-07-03 14:12:37 | DEBUG    | logging:callHandlers:1737 - Looking up time zone info from registry
+2026-07-03 14:12:37 | INFO     | logging:callHandlers:1737 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 14:12:37 | INFO     | logging:callHandlers:1737 - Added job "ThreatIntelligenceAgent.run_evaluation" to job store "default"
+2026-07-03 14:12:37 | INFO     | logging:callHandlers:1737 - Scheduler started
+2026-07-03 14:12:37 | INFO     | app.main:lifespan:30 - Background Threat Intelligence Agent scheduled.
+2026-07-03 14:12:37 | DEBUG    | logging:callHandlers:1737 - Looking for jobs to run
+2026-07-03 14:12:37 | DEBUG    | logging:callHandlers:1737 - Next wakeup is due at 2026-07-03 15:12:37.662665+05:30 (in 3599.996329 seconds)
+2026-07-03 14:12:37 | INFO     | logging:callHandlers:1737 - Application startup complete.
+2026-07-03 14:12:46 | INFO     | app.middleware.request_logger:dispatch:55 - DEBUG: Raw URL = http://127.0.0.1:8000/api/v1/health?user=admin%27+OR+%271%27%3D%271
+2026-07-03 14:12:46 | INFO     | app.middleware.request_logger:dispatch:56 - DEBUG: Query Params = {'user': "admin' OR '1'='1"}
+2026-07-03 14:12:46 | WARNING  | app.firewall.firewall_engine:_apply_temporary_block:96 - Firewall created temporary block rule for 127.0.0.1 expiring at 2026-07-03 09:12:46.750158
+2026-07-03 14:12:46 | WARNING  | app.middleware.request_logger:dispatch:142 - Detected SQLI from 127.0.0.1 (Confidence: 95.0)
+2026-07-03 14:12:46 | INFO     | app.middleware.request_logger:dispatch:171 - WAF Blocked request ea5af609-206a-4b08-9964-eaa73676e676 from 127.0.0.1 -> /api/v1/health
+2026-07-03 14:12:46 | INFO     | logging:callHandlers:1737 - 127.0.0.1:49772 - "GET /api/v1/health?user=admin%27+OR+%271%27%3D%271 HTTP/1.1" 403
+2026-07-03 14:12:47 | DEBUG    | logging:callHandlers:1737 - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2026-07-03 14:12:49 | DEBUG    | logging:callHandlers:1737 - connect_tcp.failed exception=ConnectError(OSError('All connection attempts failed'))
+2026-07-03 14:12:49 | WARNING  | app.ai.ollama_service:analyze_threat:73 - Ollama connection error on attempt 1: All connection attempts failed
+2026-07-03 14:12:49 | DEBUG    | logging:callHandlers:1737 - connect_tcp.started host='localhost' port=11434 local_address=None timeout=10.0 socket_options=None
+2026-07-03 14:12:52 | DEBUG    | logging:callHandlers:1737 - connect_tcp.failed exception=ConnectError(OSError('All connection attempts failed'))
+2026-07-03 14:12:52 | WARNING  | app.ai.ollama_service:analyze_threat:73 - Ollama connection error on attempt 2: All connection attempts failed
+2026-07-03 14:12:52 | ERROR    | app.ai.ollama_service:analyze_threat:93 - Ollama analysis failed for request 11. Falling back to rule-based only.
+2026-07-03 14:13:25 | INFO     | app.middleware.request_logger:dispatch:55 - DEBUG: Raw URL = http://127.0.0.1:8000/api/v1/health?user=admin%27+OR+%271%27%3D%271
+2026-07-03 14:13:25 | INFO     | app.middleware.request_logger:dispatch:56 - DEBUG: Query Params = {'user': "admin' OR '1'='1"}
+2026-07-03 14:13:25 | ERROR    | app.middleware.request_logger:dispatch:163 - Failed to process WAF logic: 'reason' is an invalid keyword argument for BlockedIP
+2026-07-03 14:13:25 | INFO     | app.middleware.request_logger:dispatch:205 - Allowed request c4f7299a-a98b-442c-9f25-71d63fe0ff11 from 127.0.0.1 -> /api/v1/health [200] in 4ms
+2026-07-03 14:13:25 | INFO     | logging:callHandlers:1737 - 127.0.0.1:54961 - "GET /api/v1/health?user=admin%27+OR+%271%27%3D%271 HTTP/1.1" 200
+2026-07-03 14:14:42 | INFO     | logging:callHandlers:1737 - Shutting down
+2026-07-03 14:14:42 | INFO     | logging:callHandlers:1737 - Waiting for application shutdown.
+2026-07-03 14:14:42 | INFO     | app.main:lifespan:36 - Shutting down Sentinel AI
+2026-07-03 14:14:42 | INFO     | logging:callHandlers:1737 - Scheduler has been shut down
+2026-07-03 14:14:42 | INFO     | logging:callHandlers:1737 - Application shutdown complete.
+2026-07-03 14:14:42 | INFO     | logging:callHandlers:1737 - Finished server process [7880]
+2026-07-03 14:14:43 | INFO     | app.main:lifespan:20 - Starting Sentinel AI v1.0.0
+2026-07-03 14:14:43 | INFO     | app.main:lifespan:23 - Initializing database connections...
+2026-07-03 14:14:43 | INFO     | app.database.database:test_connection:43 - Database connection established successfully.
+2026-07-03 14:14:43 | DEBUG    | logging:callHandlers:1737 - Looking up time zone info from registry
+2026-07-03 14:14:43 | INFO     | logging:callHandlers:1737 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 14:14:43 | INFO     | logging:callHandlers:1737 - Added job "ThreatIntelligenceAgent.run_evaluation" to job store "default"
+2026-07-03 14:14:43 | INFO     | logging:callHandlers:1737 - Scheduler started
+2026-07-03 14:14:43 | INFO     | app.main:lifespan:30 - Background Threat Intelligence Agent scheduled.
+2026-07-03 14:14:43 | DEBUG    | logging:callHandlers:1737 - Looking for jobs to run
+2026-07-03 14:14:43 | DEBUG    | logging:callHandlers:1737 - Next wakeup is due at 2026-07-03 15:14:43.312615+05:30 (in 3599.997015 seconds)
+2026-07-03 14:14:43 | INFO     | logging:callHandlers:1737 - Application startup complete.
+2026-07-03 14:14:47 | INFO     | logging:callHandlers:1737 - Shutting down
+2026-07-03 14:14:48 | INFO     | logging:callHandlers:1737 - Waiting for application shutdown.
+2026-07-03 14:14:48 | INFO     | app.main:lifespan:36 - Shutting down Sentinel AI
+2026-07-03 14:14:48 | INFO     | logging:callHandlers:1737 - Scheduler has been shut down
+2026-07-03 14:14:48 | INFO     | logging:callHandlers:1737 - Application shutdown complete.
+2026-07-03 14:14:48 | INFO     | logging:callHandlers:1737 - Finished server process [29544]
+2026-07-03 14:14:53 | INFO     | app.main:lifespan:20 - Starting Sentinel AI v1.0.0
+2026-07-03 14:14:53 | INFO     | app.main:lifespan:23 - Initializing database connections...
+2026-07-03 14:14:53 | INFO     | app.database.database:test_connection:43 - Database connection established successfully.
+2026-07-03 14:14:53 | DEBUG    | logging:callHandlers:1737 - Looking up time zone info from registry
+2026-07-03 14:14:53 | INFO     | logging:callHandlers:1737 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 14:14:53 | INFO     | logging:callHandlers:1737 - Added job "ThreatIntelligenceAgent.run_evaluation" to job store "default"
+2026-07-03 14:14:53 | INFO     | logging:callHandlers:1737 - Scheduler started
+2026-07-03 14:14:53 | INFO     | app.main:lifespan:30 - Background Threat Intelligence Agent scheduled.
+2026-07-03 14:14:53 | DEBUG    | logging:callHandlers:1737 - Looking for jobs to run
+2026-07-03 14:14:53 | DEBUG    | logging:callHandlers:1737 - Next wakeup is due at 2026-07-03 15:14:53.379762+05:30 (in 3599.997517 seconds)
+2026-07-03 14:14:53 | INFO     | logging:callHandlers:1737 - Application startup complete.
+2026-07-03 14:15:28 | INFO     | app.middleware.request_logger:dispatch:55 - DEBUG: Raw URL = http://127.0.0.1:8000/api/v1/health?user=admin%27+OR+%271%27%3D%271
+2026-07-03 14:15:28 | INFO     | app.middleware.request_logger:dispatch:56 - DEBUG: Query Params = {'user': "admin' OR '1'='1"}
+2026-07-03 14:15:28 | ERROR    | app.middleware.request_logger:dispatch:163 - Failed to process WAF logic: 'reason' is an invalid keyword argument for BlockedIP
+2026-07-03 14:15:28 | INFO     | app.middleware.request_logger:dispatch:205 - Allowed request dd1c5e0c-b0d1-487f-b455-a1970c91c562 from 127.0.0.1 -> /api/v1/health [200] in 36ms
+2026-07-03 14:15:28 | INFO     | logging:callHandlers:1737 - 127.0.0.1:64652 - "GET /api/v1/health?user=admin%27+OR+%271%27%3D%271 HTTP/1.1" 200
+2026-07-03 14:15:36 | INFO     | app.middleware.request_logger:dispatch:55 - DEBUG: Raw URL = http://127.0.0.1:8000/api/v1/health?user=admin'%20OR%20'1'='1
+2026-07-03 14:15:36 | INFO     | app.middleware.request_logger:dispatch:56 - DEBUG: Query Params = {'user': "admin' OR '1'='1"}
+2026-07-03 14:15:36 | ERROR    | app.middleware.request_logger:dispatch:163 - Failed to process WAF logic: 'reason' is an invalid keyword argument for BlockedIP
+2026-07-03 14:15:36 | INFO     | app.middleware.request_logger:dispatch:205 - Allowed request 3d83b667-da99-4edc-a657-c52d3614f19c from 127.0.0.1 -> /api/v1/health [200] in 4ms
+2026-07-03 14:15:36 | INFO     | logging:callHandlers:1737 - 127.0.0.1:49992 - "GET /api/v1/health?user=admin'%20OR%20'1'='1 HTTP/1.1" 200
+2026-07-03 14:15:40 | INFO     | app.middleware.request_logger:dispatch:55 - DEBUG: Raw URL = http://127.0.0.1:8000/api/v1/health
+2026-07-03 14:15:40 | INFO     | app.middleware.request_logger:dispatch:56 - DEBUG: Query Params = {}
+2026-07-03 14:15:40 | INFO     | app.middleware.request_logger:dispatch:171 - WAF Blocked request c3d5cba1-9e57-43b3-bc65-615f305f2b1b from 127.0.0.1 -> /api/v1/health
+2026-07-03 14:15:40 | INFO     | logging:callHandlers:1737 - 127.0.0.1:49992 - "GET /api/v1/health HTTP/1.1" 403
+2026-07-03 14:15:44 | INFO     | app.middleware.request_logger:dispatch:55 - DEBUG: Raw URL = http://127.0.0.1:8000/api/v1/health?user=admin'%20OR%20'1'='1
+2026-07-03 14:15:44 | INFO     | app.middleware.request_logger:dispatch:56 - DEBUG: Query Params = {'user': "admin' OR '1'='1"}
+2026-07-03 14:15:44 | ERROR    | app.middleware.request_logger:dispatch:163 - Failed to process WAF logic: 'reason' is an invalid keyword argument for BlockedIP
+2026-07-03 14:15:44 | INFO     | app.middleware.request_logger:dispatch:205 - Allowed request 89ad9cbf-6f11-43b0-8817-8f51556c0796 from 127.0.0.1 -> /api/v1/health [200] in 3ms
+2026-07-03 14:15:44 | INFO     | logging:callHandlers:1737 - 127.0.0.1:49992 - "GET /api/v1/health?user=admin'%20OR%20'1'='1 HTTP/1.1" 200
+2026-07-03 14:19:09 | INFO     | app.middleware.request_logger:dispatch:55 - DEBUG: Raw URL = http://127.0.0.1:8000/api/v1/health
+2026-07-03 14:19:09 | INFO     | app.middleware.request_logger:dispatch:56 - DEBUG: Query Params = {}
+2026-07-03 14:19:09 | INFO     | app.middleware.request_logger:dispatch:171 - WAF Blocked request 86d27908-9951-45fc-a625-c6936a507915 from 127.0.0.1 -> /api/v1/health
+2026-07-03 14:19:09 | INFO     | logging:callHandlers:1737 - 127.0.0.1:59113 - "GET /api/v1/health HTTP/1.1" 403
+2026-07-03 14:22:45 | INFO     | logging:callHandlers:1737 - Shutting down
+2026-07-03 14:22:45 | INFO     | logging:callHandlers:1737 - Waiting for application shutdown.
+2026-07-03 14:22:45 | INFO     | app.main:lifespan:36 - Shutting down Sentinel AI
+2026-07-03 14:22:45 | INFO     | logging:callHandlers:1737 - Scheduler has been shut down
+2026-07-03 14:22:45 | INFO     | logging:callHandlers:1737 - Application shutdown complete.
+2026-07-03 14:22:45 | INFO     | logging:callHandlers:1737 - Finished server process [18068]
+2026-07-03 14:22:46 | INFO     | app.main:lifespan:20 - Starting Sentinel AI v1.0.0
+2026-07-03 14:22:46 | INFO     | app.main:lifespan:23 - Initializing database connections...
+2026-07-03 14:22:47 | INFO     | app.database.database:test_connection:43 - Database connection established successfully.
+2026-07-03 14:22:47 | DEBUG    | logging:callHandlers:1737 - Looking up time zone info from registry
+2026-07-03 14:22:47 | INFO     | logging:callHandlers:1737 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 14:22:47 | INFO     | logging:callHandlers:1737 - Added job "ThreatIntelligenceAgent.run_evaluation" to job store "default"
+2026-07-03 14:22:47 | INFO     | logging:callHandlers:1737 - Scheduler started
+2026-07-03 14:22:47 | INFO     | app.main:lifespan:30 - Background Threat Intelligence Agent scheduled.
+2026-07-03 14:22:47 | DEBUG    | logging:callHandlers:1737 - Looking for jobs to run
+2026-07-03 14:22:47 | DEBUG    | logging:callHandlers:1737 - Next wakeup is due at 2026-07-03 15:22:47.024465+05:30 (in 3599.997820 seconds)
+2026-07-03 14:22:47 | INFO     | logging:callHandlers:1737 - Application startup complete.
+2026-07-03 14:22:47 | INFO     | logging:callHandlers:1737 - Shutting down
+2026-07-03 14:22:47 | INFO     | logging:callHandlers:1737 - Waiting for application shutdown.
+2026-07-03 14:22:47 | INFO     | app.main:lifespan:36 - Shutting down Sentinel AI
+2026-07-03 14:22:47 | INFO     | logging:callHandlers:1737 - Scheduler has been shut down
+2026-07-03 14:22:47 | INFO     | logging:callHandlers:1737 - Application shutdown complete.
+2026-07-03 14:22:47 | INFO     | logging:callHandlers:1737 - Finished server process [2668]
+2026-07-03 14:22:48 | INFO     | app.main:lifespan:20 - Starting Sentinel AI v1.0.0
+2026-07-03 14:22:48 | INFO     | app.main:lifespan:23 - Initializing database connections...
+2026-07-03 14:22:49 | INFO     | app.database.database:test_connection:43 - Database connection established successfully.
+2026-07-03 14:22:49 | DEBUG    | logging:callHandlers:1737 - Looking up time zone info from registry
+2026-07-03 14:22:49 | INFO     | logging:callHandlers:1737 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-03 14:22:49 | INFO     | logging:callHandlers:1737 - Added job "ThreatIntelligenceAgent.run_evaluation" to job store "default"
+2026-07-03 14:22:49 | INFO     | logging:callHandlers:1737 - Scheduler started
+2026-07-03 14:22:49 | INFO     | app.main:lifespan:30 - Background Threat Intelligence Agent scheduled.
+2026-07-03 14:22:49 | DEBUG    | logging:callHandlers:1737 - Looking for jobs to run
+2026-07-03 14:22:49 | DEBUG    | logging:callHandlers:1737 - Next wakeup is due at 2026-07-03 15:22:49.025810+05:30 (in 3599.997358 seconds)
+2026-07-03 14:22:49 | INFO     | logging:callHandlers:1737 - Application startup complete.
+2026-07-03 14:22:52 | INFO     | logging:callHandlers:1737 - Shutting down
+2026-07-03 14:22:52 | INFO     | logging:callHandlers:1737 - Waiting for application shutdown.
+2026-07-03 14:22:52 | INFO     | app.main:lifespan:36 - Shutting down Sentinel AI
+2026-07-03 14:22:52 | INFO     | logging:callHandlers:1737 - Scheduler has been shut down
+2026-07-03 14:22:52 | INFO     | logging:callHandlers:1737 - Application shutdown complete.
+2026-07-03 14:22:52 | INFO     | logging:callHandlers:1737 - Finished server process [19420]

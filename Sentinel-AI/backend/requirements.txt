@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+sqlalchemy>=2.0
+alembic
+pymysql
+pydantic>=2.0
+pydantic-settings
+python-dotenv
+apscheduler
+httpx
+loguru
